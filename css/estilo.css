@@ -1,0 +1,718 @@
+*{padding: 0; margin: 0 auto}
+@font-face {
+    font-family: 'Open-Sans';
+    src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+    font-size: 1em;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background: #303030;
+    border-bottom: 3px solid #891b20;
+    position: relative;
+    z-index: 2;
+}
+
+header .container {
+    position: relative;
+}
+
+header #logotipo {
+    position: absolute;
+    width: 100px;
+    top: 10px;
+}
+
+#btn-bars {
+    display: none;
+}
+
+
+/**** MENU ****/
+#menu ul {
+    padding: 10px 0;
+    margin-top: 12px;
+    float: right;
+}
+
+#menu li {
+    display: inline-block;
+    font-family: "OpenSans";
+}
+
+#menu li a {
+    color: #fff;
+    font-size: 16px;
+    padding: 25px 27px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	-ms-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+#menu a:hover{
+    background-color: #1a1a1a;
+}
+    
+#menu ul li .sub-menu {
+    position: absolute;
+    visibility: hidden;
+}
+
+#menu ul li:hover .sub-menu {
+   visibility: visible;
+}
+
+#menu ul .sub-menu li a {
+    display: block;
+    width: 250px;
+    height: 30px;
+    border-bottom: 1px solid #891b20;
+    background: #303030;
+    line-height: 3px;
+}
+
+#menu ul .sub-menu li a:hover {
+    background: #1a1a1a;
+}
+
+#menu ul li ul li .border-none {
+    border: none;
+}
+
+
+/**** CARROUSEL ****/
+section {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#my-slider .box-two {
+    width: 50%;
+    height: auto;
+    background-color: rgba(26, 26, 26, 0.9);
+}
+
+#my-slider .carousel-caption h1 {
+    font-size: 45px;
+}
+
+#my-slider .carousel-caption p {
+    font-size: 22px;
+    margin: 0 30px 0 30px;
+}
+
+/**** HOME-SERVIÇOS ****/
+#home-servicos {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+#home-servicos h2 {
+    color: #1a1a1a;
+    font-family: 'OpenSans-Light';
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#home-servicos hr {
+    border: #b63b42 solid 5px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+#home-servicos .thumbnails {
+    margin-top: 40px;
+}
+
+.ch-grid {
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin: 0 20px 0 20px;
+}
+
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	cursor: default;
+	box-shadow: inset 0 0 0 16px rgba(255,255,255,0.6), 0 1px 2px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in-out;
+}
+
+.ch-img-1 { 
+	background-image: url(../img/1.jpg);
+}
+
+.ch-img-2 { 
+	background-image: url(../img/2.jpg);
+}
+
+.ch-img-3 { 
+	background-image: url(../img/3.jpg);
+}
+
+.ch-img-4 { 
+	background-image: url(../img/4.jpg);
+}
+
+.ch-img-5 { 
+	background-image: url(../img/5.jpg);
+}
+
+.ch-img-6 { 
+	background-image: url(../img/6.jpg);
+}
+
+.ch-img-7 { 
+	background-image: url(../img/7.jpg);
+}
+
+.ch-img-8 { 
+	background-image: url(../img/8.jpg);
+}
+
+
+.ch-info {
+	position: absolute;
+	background: rgba(108, 122, 137, 0.8);
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+}
+
+.ch-info h3 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin: 0 30px;
+	padding: 80px 0 0 0;
+	height: 140px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info h3 a{
+    text-decoration: none;
+    color: #fff;
+    cursor: auto;
+}
+
+
+.ch-item:hover {
+	box-shadow: 
+		inset 0 0 0 1px rgba(255,255,255,0.1),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+
+.ch-item:hover .ch-info {
+	transform: scale(1);
+	opacity: 1;
+}
+
+
+/**** TEXT-LESIGN ****/
+#text-lesign {
+    background-color: #b63b42;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#text-lesign h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "OpenSans-Light";
+    font-size: 20px;
+    margin-top: 70px;   
+}
+
+#text-lesign h3 {
+    color: #fff;
+    font-family: "OpenSans-Light";
+    font-size: 18px;
+    margin-bottom: 70px
+}
+
+
+/**** FOOTER ****/
+footer .row {
+    width: 100%;
+    margin-left: 0;
+}
+
+footer .row p {
+	line-height: 55px;
+	margin-bottom: 0;
+}
+
+footer .row-cinza-claro {
+    height: auto;
+    background-color: #171f26;
+}
+
+footer .col-logotipo,
+footer .col-endereco,
+footer .col-rede-social {
+    margin-top: 40px;
+}
+
+footer .row-cols h4 {
+    color: #fff;
+    font-family: "Open-Sans";
+    font-size: 16px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+footer .col-logotipo img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+footer .col-endereco address {
+    line-height: 20px;
+    color: #666;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+footer .col-rede-social ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+footer .list-socials a {
+	display: block;
+	border: #9B9B9B 3px solid;
+	width: 50px;
+	height: 50px;
+	line-height: 0px;
+	border-radius: 50%;
+	text-align: center;
+    margin-top: 10px;
+    padding: 8px 6px;
+    color: #9B9B9B;
+}
+
+footer .list-socials i {
+	padding: 15px 6px;
+}
+
+
+/**** FOOTER COPYRIGHT ****/
+footer .copyright {
+    height: 56px;
+    background-color: #11171d;
+    border-top: #242d37 1px solid;
+}
+
+footer .pull-left {
+    color: #666;
+    font-family: "Open-Sans";
+    font-size: 14px;
+}
+
+/*********************************************************************************/
+
+/**** EMPRESA ****/
+#banner-empresa {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url("../img/banner-empresa.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    top: -90px;
+}
+
+#banner-empresa h1 {
+    color: #fff;
+    top: 230px;
+    position: relative;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
+}
+
+#banner-empresa h1 small {
+    font-size: 32px;
+    display: block;
+    color: #fff;
+}
+
+#empresa {
+    top: -55px;
+    position: relative;
+}
+
+#empresa h2 {
+    color: #1a1a1a;
+    font-family: 'OpenSans-Light';
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#empresa hr {
+    border: #b63b42 solid 5px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+#empresa .thumbnails {
+    margin-top: 40px;
+}
+
+#empresa .sobre {
+    margin-top: 40px;
+}
+
+#empresa .sobre, .col-md-4 p {
+    color: #666;
+    font-family: 'Open-Sans';
+}
+
+#empresa .col-md-4 {
+    margin-top: 20px;
+}
+
+#empresa .col-md-4 h3 {
+    font-size: 25px;
+    font-family: 'OpenSans-Light';
+    color: #000;
+    font-weight: bold;
+}
+
+#estatisticas-empresa {
+    background-color: #b63b42;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#estatisticas-empresa h4 {
+   color: #f1f1f1; 
+}
+
+#estatisticas-empresa a {
+    display: block;
+    border: #f1f1f1 3px solid;
+    width: 80px;
+    height: 80px;
+    line-height: 0px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 60px;
+    padding: 16px 12px;
+    color: #f1f1f1;
+}
+
+#estatisticas-empresa a i {
+    margin: 10px 6px;
+}
+
+#estatisticas-empresa p {
+    color: #f1f1f1;
+    font-family: "OpenSans-Light";
+    font-size: 16px;
+    margin-top: 26px;
+    margin-bottom: 50px;
+}
+
+
+/**************************************************************************************/
+/**** SERVICOS ****/
+#banner-servicos {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url("../img/banner-servicos.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    top: -90px;
+}
+
+#banner-servicos h1 {
+    color: #fff;
+    top: 230px;
+    position: relative;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
+}
+
+#banner-servicos h1 small {
+    font-size: 32px;
+    display: block;
+    color: #fff;
+}
+
+#servicos {
+    top: -55px;
+    position: relative;
+}
+
+#servicos h2 {
+    color: #1a1a1a;
+    font-family: 'OpenSans-Light';
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#servicos hr {
+    border: #b63b42 solid 5px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.carousel-servicos {
+    margin-top: 40px;
+}
+
+#estatisticas-servicos {
+    background-color: #6C7A89;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#estatisticas-servicos img {
+    color: #fde092;
+    text-transform: uppercase;
+    font-family: "OpenSans-Light";
+    font-size: 64px;
+    margin-top: 36px;
+    margin-bottom: 15px;
+}
+
+#estatisticas-servicos p small {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+#estatisticas-servicos p {
+    color: #fff;
+    font-family: "OpenSans-Light";
+    margin-bottom: 50px;
+}
+
+
+/**************************************************************************************/
+/**** CONTATO ****/
+#banner-contato {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 0px;
+    background-position: 0px -100px;
+}
+
+#banner-contato iframe{
+    width: 100%;
+    height: 410px;
+}
+
+#contato {
+    position: relative;
+    top: 125px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+#contato h2 {
+    color: #1a1a1a;
+    font-family: 'OpenSans-Light';
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#contato hr {
+    border: #b63b42 solid 5px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+/* FORMULARIO */
+.formulario {
+    margin-top: 70px;
+}
+
+.cont{
+	width: 500px; 
+	height: 50px; 
+	border: thin solid #999;
+	margin: 10px 0 0 0;
+	border-radius: 5px;
+	border: 2px solid #891b20;
+}
+
+.cont:focus{
+	border: thin solid #999;
+	box-shadow: 0 2px 10px #999;
+	-webkit-box-shadow: 0 2px 10px #999;
+	-moz-box-shadow: 0 2px 10px #999;
+}
+
+.men{
+	width: 500px; 
+	height: 200px; 
+	border: thin solid #999;
+	margin: 10px 0 0 0;
+	border-radius: 5px;
+	border: 2px solid #891b20;
+}
+
+.men:focus{
+	border: thin solid #999; 
+	box-shadow: 0 2px 10px #999; 
+	-webkit-box-shadow: 0 2px 10px #999; 
+	-moz-box-shadow: 0 2px 10px #999;
+}
+
+.sb{
+	width: 130px;
+	height: 50px;
+	cursor: pointer;
+	color: #fff;
+	background-color: #891b20;
+	border-radius: 5px;
+	margin: 10px 0 0 0;
+	font-size: 18px;
+}
+
+#contato .box_endereco {
+	width: 300px;
+	height: 200px;
+	float: right;
+	margin: 70px 50px 0 0;
+	font-family: 'Roboto Condensed', sans-serif;
+	background: #ccc;
+}
+
+#contato .box_endereco h3 {
+    padding: 20px 0 0 30px;
+}
+
+#contato .box_endereco p {
+    padding: 10px 0 0 30px;
+}
+
+
+
+/***********************************************************************************/
+
+/**** SERVIÇOS ****/
+#drop-down-servicos {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#drop-down-servicos .row .col-md-3 img {
+    box-shadow: 0px 0px 1em #666;
+    cursor: pointer
+}
+
+#drop-down-servicos .thumbnails {
+    margin-top: 50px;
+}
+
+#drop-down-servicos .thumbnails h3 {
+    color: #5e299a;
+    font-size: 16px;
+    font-family: "Open-Sans";
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#banner-drop-down-servicos {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.drop-down-servicos-text h1{
+    color: #fff;
+    position: relative;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
+    top: 50px;
+}
+
+/**** BANNER E FAIXAS ****/
+.banner {
+    background-color: #c0392b;
+}
+
+/**** ADESIVOS E DECORATIVOS ****/
+.adesivos {
+    background-color: #16a085;
+}
+/**** PLACAS DE SINALIZAÇÃO ****/
+.placas {
+    background-color: #f1c40f;
+}
+
+/**** FACHADAS E LUMONOSOS ****/
+.fachada {
+    background-color: #9b59b6;
+}
+
+/**** SINALIZAÇÃO INTERNA ****/
+.s-interna {
+    background-color: #2980b9;
+}
+
+/**** SINALIZAÇÃO DE VEICULOS ****/
+.s-veiculos {
+    background-color: #27ae60;
+}
+
+/**** LETRAS CAIXA ****/
+.letras {
+    background-color: #e67e22;
+}
+/**** CONVITES FINOS ****/
+.convites {
+    background-color: #95a5a6;
+}
