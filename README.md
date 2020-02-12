@@ -2,4 +2,6 @@
 
 Link: www.lesign.com.br
 
-Desenvolvedor: Jonatas Alves
+Desenvolvedor
+- Nome: Jonatas Alves
+- E-mail: jonatas.a2012@hotmail.com
