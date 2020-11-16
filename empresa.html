@@ -1,224 +1,210 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8">
+    <meta content="Lesign" name="description">
+    <meta name="description" content="Lesign - Impressão Digital e Comunicação Visual">
+    <meta name="keywords" content="Lesign, Impressão, Comunicação, Digital, 
+    Visual, Banner, Faixas, Adesivos, Convites, Placas de Sinalização, 
+    Sinalização Interna, Letras Caixa, Fachadas e Luminosos, Sinalização de Veiculos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lesign</title>
+    <link rel="icon" href="img/lesign.ico">
 
-    <head>
-        <title>Lesign</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Lesign - Impressão Digital e Comunicação Visual" /><meta name="keywords" content="Lesign, Impressão, Comunicação, Digital, Visual, Banner, Faixas, Adesivos, Convites, Placas de Sinalização, Sinalização Interna, Letras Caixa, Fachadas e Luminosos, Sinalização de Veiculos" />
-        <meta content="Lesign" name="description" />
-        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-        <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-        <script defer src="fonts/fontawesome-novo/svg-with-js/js/fontawesome-all.js"></script>
-        <link rel="stylesheet" href="css/estilo.css">
-        <link rel="stylesheet" href="css/media.css">
-    </head>
+    <!-- Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <script defer src="fonts/fontawesome-novo/svg-with-js/js/fontawesome-all.js"></script>
 
-    <body>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/empresa.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    
+    <header>
+
+        <div id="menu-mobile-mask" class="visible-xs"></div>
         
-        <header>
-
-            <div id="menu-mobile-mask" class="visible-xs"></div>
+        <div id="menu-mobile" class="visible-xs">
             
-            <div id="menu-mobile" class="visible-xs">
-                
-                <ul class="list-unstyled">
+            <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="empresa.html">Quem Somos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            
+            <div class="bar-close">
+                <button type="button" class="btn btn-close"><i class="fa fa-close"></i></button>
+            </div>
+            
+        </div>
+
+        <button id="btn-bars" type="button"><i class="fa fa-bars"></i></button>
+        
+        <div class="container">
+            <img id="logotipo" src="img/logotipo.svg">
+        </div>
+        
+        <div class="container">
+            <nav id="menu">
+                <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="empresa.html">Quem Somos</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="servicos.html">Serviços</a>
+                        <ul class="sub-menu">
+                            <li><a href="banner-faixas.html">Banner e Faixas</a></li>
+                            <li><a href="adesivos-decorativos.html">Adesivos Decorativos</a></li>
+                            <li><a href="placas-sinalizacao.html">Placas de Sinalização</a></li>
+                            <li><a href="fachadas-luminosos.html">Fachadas e Luminosos</a></li>
+                            <li><a href="sinalizacao-interna.html">Sinalização Interna</a></li>
+                            <li><a href="sinalizacao-veiculos.html">Sinalização de Veiculos</a></li>
+                            <li><a href="letras-caixas.html">Letras Caixa</a></li>
+                            <li><a class="border-none" href="convites.html">Convites Finos</a></li>
+                        </ul>
+                    </li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
-                
-                <div class="bar-close">
-                    <button type="button" class="btn btn-close"><i class="fa fa-close"></i></button>
-                </div>
-                
-            </div>
+            </nav>
+        </div>
+        
+    </header>
+    
+    <section>
 
-            <button id="btn-bars" type="button"><i class="fa fa-bars"></i></button>
+        <div id="banner-empresa">
             
             <div class="container">
-                <img id="logotipo" src="img/logo.PNG">
+                <h1>Quem Somos<small>Nossa Empresa</small></h1>
             </div>
             
-            <div class="container">
-                <nav id="menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="empresa.html">Quem Somos</a></li>
-                        <li><a href="servicos.html">Serviços</a>
-                            <ul class="sub-menu">
-                                <li><a href="banner-faixas.html">Banner e Faixas</a></li>
-                                <li><a href="adesivos-decorativos.html">Adesivos Decorativos</a></li>
-                                <li><a href="placas-sinalizacao.html">Placas de Sinalização</a></li>
-                                <li><a href="fachadas-luminosos.html">Fachadas e Luminosos</a></li>
-                                <li><a href="sinalizacao-interna.html">Sinalização Interna</a></li>
-                                <li><a href="sinalizacao-veiculos.html">Sinalização de Veiculos</a></li>
-                                <li><a href="letras-caixas.html">Letras Caixa</a></li>
-                                <li><a class="border-none" href="convites.html">Convites Finos</a></li>
-                            </ul>
+        </div>
+        
+        <div id="empresa">
+            <div class="container text-center">
+            
+                <div class="row">
+                    <h2>Empresa</h2>
+                    <hr>
+                </div>
+
+                <div class="row sobre">
+                    <p>A Lesign é fruto da dedicação de uma profissional comprometida e que ama o que faz. Vem atendendo, trabalhando e satisfazendo às necessidades de seus clientes com criatividade, iniciativa e qualidade. A combinação da atenção dada a cada cliente, com qualidade, variedade e pontualidade, faz da Lesign uma empresa completa e inovadora</p>
+                </div>
+
+                <div class="col-md-4 col-missao">
+
+                    <h3>Missão</h3>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>Atender satisfatoriamente às necessidades de nossos clientes no seguimento de Comunicação Visual, prestando bom atendimento, com confiança, variedade, qualidade e prazo</p>
                         </li>
-                        <li><a href="contato.html">Contato</a></li>
                     </ul>
-                </nav>
-            </div>
-            
-        </header>
-        
-        <section>
 
-            <div id="banner-empresa">
-                
-                <div class="container">
-                    <h1>Quem Somos<small>Nossa Empresa</small></h1>
+                </div>
+
+                <div class="col-md-4 col-visao">
+
+                    <h3>Visão</h3>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>Impressionar e ser reconhecida no mercado que atuamos, buscando aprimoramento constante para influenciar o sucesso de nossos clientes</p>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4 col-valores">
+
+                    <h3>Valores</h3>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>Respeito no relacionamento humano. Trabalhar com dedicação, excelência e qualidade pois imagem é tudo</p>
+                        </li>
+                    </ul>
+
                 </div>
                 
             </div>
-            
-            <div id="empresa">
-                <div class="container text-center">
-                
-                    <div class="row">
-                        <h2>Empresa</h2>
-                        <hr>
-                    </div>
-
-                    <div class="row sobre">
-                       <p>A Lesign é fruto da dedicação de uma profissional comprometida e que ama o que faz. Vem atendendo, trabalhando e satisfazendo às necessidades de seus clientes com criatividade, iniciativa e qualidade. A combinação da atenção dada a cada cliente, com qualidade, variedade e pontualidade, faz da Lesign uma empresa completa e inovadora</p>
-                    </div>
-
-                    <div class="col-md-4 col-missao">
-
-                        <h3>Missão</h3>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <p>Atender satisfatoriamente às necessidades de nossos clientes no seguimento de Comunicação Visual, prestando bom atendimento, com confiança, variedade, qualidade e prazo</p>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                    <div class="col-md-4 col-visao">
-
-                        <h3>Visão</h3>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <p>Impressionar e ser reconhecida no mercado que atuamos, buscando aprimoramento constante para influenciar o sucesso de nossos clientes</p>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                    <div class="col-md-4 col-valores">
-
-                        <h3>Valores</h3>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <p>Respeito no relacionamento humano. Trabalhar com dedicação, excelência e qualidade pois imagem é tudo</p>
-                            </li>
-                        </ul>
-
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div id="estatisticas-empresa">
-            
-                <div class="container">
-                    
-                    <div class="row row-cols text-center">
-                                
-                        <div class="col-md-3 col-estatistica">
-                            <a><i class="fas fa-eye fa-3x"></i></a> 
-                            <h4>COMUNICAÇÃO VISUAL</h4>
-                            <p>Somos 100% focados em projetos e montagens de stands</p>
-                        </div>
-                                
-                        <div class="col-md-3 col-estatistica">
-                            <a><i class="fas fa-print fa-3x"></i></a>
-                            <h4>IMPRESSÃO DIGITAL</h4>
-                            <p>Desenvolvemos projetos especificamente para sua necessidade</p>                                                              
-                        </div>
-                                
-                        <div class="col-md-3 col-estatistica">
-                            <a><i class="fas fa-hand-holding-usd fa-3x"></i></a> 
-                            <h4>PADRONIZAÇÃO INSTITUCIONAL</h4>
-                            <p>Combinamos estética com valorização da marca, assim maximinizando o retorno de seu investimento</p>   
-                        </div>
-
-                        <div class="col-md-3 col-estatistica">
-                            <a><i class="far fa-lightbulb fa-3x"></i></a> 
-                            <h4>INOVE, APAREÇA E IMPRESSIONE</h4>
-                            <p>Além de gerar tráfego ao seu stand, usamos nossas experiências e técnicas para converter mais visitantes em vendas</p>   
-                        </div>
-
-                    </div>
-
-                </div>
-            
-            </div>
+        </div>
         
-        </section>
-
-        <footer>
+        <div id="estatisticas-empresa">
         
-            <div class="row row-cinza-claro">
+            <div class="container">
                 
-                <div class="container">
+                <div class="row row-cols text-center">
                             
-                    <div class="row row-cols">
-                                
-                        <div class="col-md-4 col-logotipo text-center">
-                                   
-                            <img src="img/logo.PNG">
-                        </div>
-                                
-                        <div class="col-md-4 col-endereco">
-                                   
-                            <h4>Endereço</h4>
-                                   
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <address>Rua Orlando Bispo de Queiroz nº 406<br/>São Miguel - Arcoverde - PE<br/>Tel: (87)3821-2778 / (87)99640-5468</address>
-                                    </li>
-                                </ul>
-                                    
-                        </div>
-                                
-                        <div class="col-md-4 col-rede-social">
-                                    
-                            <ul class="list-unstyled list-socials">
-                                <li><a href="https://www.facebook.com/profile.php?id=100006032207809&ref=br_rs" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-                            </ul>
+                    <div class="col-md-3 col-estatistica">
+                        <a><i class="fas fa-eye fa-3x"></i></a> 
+                        <h4>COMUNICAÇÃO VISUAL</h4>
+                        <p>Somos 100% focados em projetos e montagens de stands</p>
+                    </div>
                             
-                        </div>
-                                
-                    </div>    
-                
+                    <div class="col-md-3 col-estatistica">
+                        <a><i class="fas fa-print fa-3x"></i></a>
+                        <h4>IMPRESSÃO DIGITAL</h4>
+                        <p>Desenvolvemos projetos especificamente para sua necessidade</p>                                                              
+                    </div>
+                            
+                    <div class="col-md-3 col-estatistica">
+                        <a><i class="fas fa-hand-holding-usd fa-3x"></i></a> 
+                        <h4>PADRONIZAÇÃO INSTITUCIONAL</h4>
+                        <p>Combinamos estética com valorização da marca, assim maximinizando o retorno de seu investimento</p>   
+                    </div>
+
+                    <div class="col-md-3 col-estatistica">
+                        <a><i class="far fa-lightbulb fa-3x"></i></a> 
+                        <h4>INOVE, APAREÇA E IMPRESSIONE</h4>
+                        <p>Além de gerar tráfego ao seu stand, usamos nossas experiências e técnicas para converter mais visitantes em vendas</p>   
+                    </div>
+
                 </div>
-            
+
             </div>
-            
-            <div class="row copyright">
-                
-                <div class="container">
-                    <p class="pull-left">Copyright © Lesign 2014 - Todos os Direitos Reservados</p>
-                </div>
-            
+        
+        </div>
+    
+    </section>
+
+    <footer> 
+        <div class="content-footer">
+            <div class="endereco-footer">
+                <h4>Endereço</h4>
+                <ul class="list-unstyled">
+                    <li>
+                        <address>
+                            Rua Orlando Bispo de Queiroz nº 406<br/>
+                            São Miguel - Arcoverde - PE<br/>
+                            Tel: (87)3821-2778 / (87)99640-5468</address>
+                    </li>
+                </ul>          
             </div>
-            
-        </footer>
+                            
+            <div class="redes-sociais-footer">
+                <ul class="list-socials">
+                    <li><a href="https://www.facebook.com/profile.php?id=100006032207809&ref=br_rs" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
-        <script type="text/javascript" src="lib/jquery/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/efeitos.js"></script>
+    <div class="copyright">
+        <p class="pull-left">Copyright © Lesign 2020 - Todos os Direitos Reservados</p>
+    </div>
 
-    </body>
-
+    <script type="text/javascript" src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/efeitos.js"></script>
+</body>
 </html>

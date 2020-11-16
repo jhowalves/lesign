@@ -1,23 +1,15 @@
-*{padding: 0; margin: 0 auto}
-@font-face {
-    font-family: 'Open-Sans';
-    src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
-    font-size: 1em;
-}
-
-@font-face {
-    font-family: 'OpenSans-Light';
-    src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
-    font-size: 1em;
+*{
+    padding: 0; 
+    margin: 0 auto;
 }
 
 header {
     width: 100%;
     height: 70px;
-    background: #303030;
-    border-bottom: 3px solid #891b20;
-    position: relative;
-    z-index: 2;
+    background: rgba(30, 30, 30, 0.95);
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 header .container {
@@ -26,8 +18,8 @@ header .container {
 
 header #logotipo {
     position: absolute;
-    width: 100px;
-    top: 10px;
+    width: 150px;
+    top: 6px;
 }
 
 #btn-bars {
@@ -44,14 +36,14 @@ header #logotipo {
 
 #menu li {
     display: inline-block;
-    font-family: "OpenSans";
+    font-family: "Open Sans";
 }
 
 #menu li a {
     color: #fff;
     font-size: 16px;
     padding: 25px 27px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     -webkit-transition: all 0.3s ease-in;
 	-moz-transition: all 0.3s ease-in;
@@ -78,8 +70,7 @@ header #logotipo {
     width: 250px;
     height: 30px;
     border-bottom: 1px solid #891b20;
-    background: #303030;
-    line-height: 3px;
+    background:rgba(30, 30, 30, 0.9);
 }
 
 #menu ul .sub-menu li a:hover {
@@ -90,236 +81,38 @@ header #logotipo {
     border: none;
 }
 
-
-/**** CARROUSEL ****/
-section {
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-
-#my-slider .box-two {
-    width: 50%;
-    height: auto;
-    background-color: rgba(26, 26, 26, 0.9);
-}
-
-#my-slider .carousel-caption h1 {
-    font-size: 45px;
-}
-
-#my-slider .carousel-caption p {
-    font-size: 22px;
-    margin: 0 30px 0 30px;
-}
-
-/**** HOME-SERVIÇOS ****/
-#home-servicos {
-    position: relative;
-    top: 20px;
-    width: 100%;
-    margin-bottom: 60px;
-}
-
-#home-servicos h2 {
-    color: #1a1a1a;
-    font-family: 'OpenSans-Light';
-    font-size: 40px;
-    text-transform: uppercase;
-}
-
-#home-servicos hr {
-    border: #b63b42 solid 5px;
-    width: 250px;
-    margin: 0 auto;
-}
-
-#home-servicos .thumbnails {
-    margin-top: 40px;
-}
-
-.ch-grid {
-	padding: 0;
-	list-style: none;
-	display: block;
-	text-align: center;
-	width: 100%;
-}
-
-.ch-grid:after,
-.ch-item:before {
-	content: '';
-    display: table;
-}
-
-.ch-grid:after {
-	clear: both;
-}
-
-.ch-grid li {
-	width: 220px;
-	height: 220px;
-	display: inline-block;
-	margin: 0 20px 0 20px;
-}
-
-.ch-item {
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	overflow: hidden;
-	position: relative;
-	cursor: default;
-	box-shadow: inset 0 0 0 16px rgba(255,255,255,0.6), 0 1px 2px rgba(0,0,0,0.1);
-	transition: all 0.4s ease-in-out;
-}
-
-.ch-img-1 { 
-	background-image: url(../img/1.jpg);
-}
-
-.ch-img-2 { 
-	background-image: url(../img/2.jpg);
-}
-
-.ch-img-3 { 
-	background-image: url(../img/3.jpg);
-}
-
-.ch-img-4 { 
-	background-image: url(../img/4.jpg);
-}
-
-.ch-img-5 { 
-	background-image: url(../img/5.jpg);
-}
-
-.ch-img-6 { 
-	background-image: url(../img/6.jpg);
-}
-
-.ch-img-7 { 
-	background-image: url(../img/7.jpg);
-}
-
-.ch-img-8 { 
-	background-image: url(../img/8.jpg);
-}
-
-
-.ch-info {
-	position: absolute;
-	background: rgba(108, 122, 137, 0.8);
-	width: inherit;
-	height: inherit;
-	border-radius: 50%;
-	overflow: hidden;
-	opacity: 0;
-	transition: all 0.4s ease-in-out;
-	transform: scale(0);
-}
-
-.ch-info h3 {
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 22px;
-	margin: 0 30px;
-	padding: 80px 0 0 0;
-	height: 140px;
-	font-family: 'Open Sans', Arial, sans-serif;
-	text-shadow: 
-		0 0 1px #fff, 
-		0 1px 2px rgba(0,0,0,0.3);
-}
-
-.ch-info h3 a{
-    text-decoration: none;
-    color: #fff;
-    cursor: auto;
-}
-
-
-.ch-item:hover {
-	box-shadow: 
-		inset 0 0 0 1px rgba(255,255,255,0.1),
-		0 1px 2px rgba(0,0,0,0.1);
-}
-
-.ch-item:hover .ch-info {
-	transform: scale(1);
-	opacity: 1;
-}
-
-
-/**** TEXT-LESIGN ****/
-#text-lesign {
-    background-color: #b63b42;
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
-
-#text-lesign h2 {
-    color: #fff;
-    text-transform: uppercase;
-    font-family: "OpenSans-Light";
-    font-size: 20px;
-    margin-top: 70px;   
-}
-
-#text-lesign h3 {
-    color: #fff;
-    font-family: "OpenSans-Light";
-    font-size: 18px;
-    margin-bottom: 70px
-}
-
-
 /**** FOOTER ****/
-footer .row {
+footer {
+    background-color: #101010;
     width: 100%;
-    margin-left: 0;
-}
-
-footer .row p {
-	line-height: 55px;
-	margin-bottom: 0;
-}
-
-footer .row-cinza-claro {
     height: auto;
-    background-color: #171f26;
+    padding: 30px
 }
 
-footer .col-logotipo,
-footer .col-endereco,
-footer .col-rede-social {
-    margin-top: 40px;
+.content-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-footer .row-cols h4 {
-    color: #fff;
-    font-family: "Open-Sans";
-    font-size: 16px;
-    padding-bottom: 5px;
-    text-transform: uppercase;
-}
-
-footer .col-logotipo img {
-    width: 100px;
-    margin-top: 10px;
-}
-
-footer .col-endereco address {
-    line-height: 20px;
+footer .endereco-footer h4 {
+    font-size: 20px;
     color: #666;
-    font-family: Arial;
-    font-size: 14px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-family: 'Poppins';
 }
 
-footer .col-rede-social ul li{
+footer .endereco-footer address {
+    color: #666;
+    font-family: 'Poppins';
+    font-size: 14px;
+    margin: 0;
+}
+
+footer .redes-sociais-footer ul li {
     display: inline-block;
-    margin: 0 5px;
+    padding-right: 8px;
 }
 
 footer .list-socials a {
@@ -335,310 +128,32 @@ footer .list-socials a {
     color: #9B9B9B;
 }
 
+footer .list-socials {
+    margin: 0;
+}
+
 footer .list-socials i {
-	padding: 15px 6px;
+	padding: 0 6px;
 }
 
 
-/**** FOOTER COPYRIGHT ****/
-footer .copyright {
-    height: 56px;
-    background-color: #11171d;
+/**** COPYRIGHT ****/
+.copyright {
+    width: 100%;
+    height: 40px;
+    background-color: #101010;
     border-top: #242d37 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-footer .pull-left {
+.copyright p {
     color: #666;
-    font-family: "Open-Sans";
+    font-family: "Poppins";
     font-size: 14px;
+    padding-top: 7px;
 }
-
-/*********************************************************************************/
-
-/**** EMPRESA ****/
-#banner-empresa {
-    width: 100%;
-    height: 500px;
-    position: relative;
-    background-image: url("../img/banner-empresa.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    top: -90px;
-}
-
-#banner-empresa h1 {
-    color: #fff;
-    top: 230px;
-    position: relative;
-    font-size: 60px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
-}
-
-#banner-empresa h1 small {
-    font-size: 32px;
-    display: block;
-    color: #fff;
-}
-
-#empresa {
-    top: -55px;
-    position: relative;
-}
-
-#empresa h2 {
-    color: #1a1a1a;
-    font-family: 'OpenSans-Light';
-    font-size: 40px;
-    text-transform: uppercase;
-}
-
-#empresa hr {
-    border: #b63b42 solid 5px;
-    width: 250px;
-    margin: 0 auto;
-}
-
-#empresa .thumbnails {
-    margin-top: 40px;
-}
-
-#empresa .sobre {
-    margin-top: 40px;
-}
-
-#empresa .sobre, .col-md-4 p {
-    color: #666;
-    font-family: 'Open-Sans';
-}
-
-#empresa .col-md-4 {
-    margin-top: 20px;
-}
-
-#empresa .col-md-4 h3 {
-    font-size: 25px;
-    font-family: 'OpenSans-Light';
-    color: #000;
-    font-weight: bold;
-}
-
-#estatisticas-empresa {
-    background-color: #b63b42;
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
-
-#estatisticas-empresa h4 {
-   color: #f1f1f1; 
-}
-
-#estatisticas-empresa a {
-    display: block;
-    border: #f1f1f1 3px solid;
-    width: 80px;
-    height: 80px;
-    line-height: 0px;
-    border-radius: 50%;
-    text-align: center;
-    margin-top: 60px;
-    padding: 16px 12px;
-    color: #f1f1f1;
-}
-
-#estatisticas-empresa a i {
-    margin: 10px 6px;
-}
-
-#estatisticas-empresa p {
-    color: #f1f1f1;
-    font-family: "OpenSans-Light";
-    font-size: 16px;
-    margin-top: 26px;
-    margin-bottom: 50px;
-}
-
-
-/**************************************************************************************/
-/**** SERVICOS ****/
-#banner-servicos {
-    width: 100%;
-    height: 500px;
-    position: relative;
-    background-image: url("../img/banner-servicos.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    top: -90px;
-}
-
-#banner-servicos h1 {
-    color: #fff;
-    top: 230px;
-    position: relative;
-    font-size: 60px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
-}
-
-#banner-servicos h1 small {
-    font-size: 32px;
-    display: block;
-    color: #fff;
-}
-
-#servicos {
-    top: -55px;
-    position: relative;
-}
-
-#servicos h2 {
-    color: #1a1a1a;
-    font-family: 'OpenSans-Light';
-    font-size: 40px;
-    text-transform: uppercase;
-}
-
-#servicos hr {
-    border: #b63b42 solid 5px;
-    width: 250px;
-    margin: 0 auto;
-}
-
-.carousel-servicos {
-    margin-top: 40px;
-}
-
-#estatisticas-servicos {
-    background-color: #6C7A89;
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
-
-#estatisticas-servicos img {
-    color: #fde092;
-    text-transform: uppercase;
-    font-family: "OpenSans-Light";
-    font-size: 64px;
-    margin-top: 36px;
-    margin-bottom: 15px;
-}
-
-#estatisticas-servicos p small {
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    display: block;
-}
-
-#estatisticas-servicos p {
-    color: #fff;
-    font-family: "OpenSans-Light";
-    margin-bottom: 50px;
-}
-
-
-/**************************************************************************************/
-/**** CONTATO ****/
-#banner-contato {
-    width: 100%;
-    height: 300px;
-    position: relative;
-    top: 0px;
-    background-position: 0px -100px;
-}
-
-#banner-contato iframe{
-    width: 100%;
-    height: 410px;
-}
-
-#contato {
-    position: relative;
-    top: 125px;
-    margin-top: 20px;
-    margin-bottom: 200px;
-}
-
-#contato h2 {
-    color: #1a1a1a;
-    font-family: 'OpenSans-Light';
-    font-size: 40px;
-    text-transform: uppercase;
-}
-
-#contato hr {
-    border: #b63b42 solid 5px;
-    width: 250px;
-    margin: 0 auto;
-}
-
-/* FORMULARIO */
-.formulario {
-    margin-top: 70px;
-}
-
-.cont{
-	width: 500px; 
-	height: 50px; 
-	border: thin solid #999;
-	margin: 10px 0 0 0;
-	border-radius: 5px;
-	border: 2px solid #891b20;
-}
-
-.cont:focus{
-	border: thin solid #999;
-	box-shadow: 0 2px 10px #999;
-	-webkit-box-shadow: 0 2px 10px #999;
-	-moz-box-shadow: 0 2px 10px #999;
-}
-
-.men{
-	width: 500px; 
-	height: 200px; 
-	border: thin solid #999;
-	margin: 10px 0 0 0;
-	border-radius: 5px;
-	border: 2px solid #891b20;
-}
-
-.men:focus{
-	border: thin solid #999; 
-	box-shadow: 0 2px 10px #999; 
-	-webkit-box-shadow: 0 2px 10px #999; 
-	-moz-box-shadow: 0 2px 10px #999;
-}
-
-.sb{
-	width: 130px;
-	height: 50px;
-	cursor: pointer;
-	color: #fff;
-	background-color: #891b20;
-	border-radius: 5px;
-	margin: 10px 0 0 0;
-	font-size: 18px;
-}
-
-#contato .box_endereco {
-	width: 300px;
-	height: 200px;
-	float: right;
-	margin: 70px 50px 0 0;
-	font-family: 'Roboto Condensed', sans-serif;
-	background: #ccc;
-}
-
-#contato .box_endereco h3 {
-    padding: 20px 0 0 30px;
-}
-
-#contato .box_endereco p {
-    padding: 10px 0 0 30px;
-}
-
-
 
 /***********************************************************************************/
 
@@ -660,7 +175,7 @@ footer .pull-left {
 #drop-down-servicos .thumbnails h3 {
     color: #5e299a;
     font-size: 16px;
-    font-family: "Open-Sans";
+    font-family: "Open Sans";
     font-weight: bold;
     margin-bottom: 0;
 }
