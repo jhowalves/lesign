@@ -1,17 +1,15 @@
 #banner-empresa {
-  width: 100%;
-  height: 500px;
-  position: relative;
   background-image: url("../img/banner-empresa.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  top: -90px;
+  width: 100%;
+  height: 430px;
+  display: flex;
+  align-items: center;
 }
 
 #banner-empresa h1 {
   color: #fff;
-  top: 230px;
-  position: relative;
   font-size: 60px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
 }
@@ -23,8 +21,7 @@
 }
 
 #empresa {
-  top: -55px;
-  position: relative;
+  padding: 60px 0;
 }
 
 #empresa h2 {

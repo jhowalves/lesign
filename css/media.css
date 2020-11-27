@@ -1,5 +1,10 @@
 @media only screen and (max-width: 768px) {
 
+    #home-servicos {
+        height: 100%;
+        padding: 60px 0;
+    }
+
     footer .col-rede-social ul li {
         text-align: center;
     }
