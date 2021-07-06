@@ -1,0 +1,129 @@
+.home {
+  width: 100%;
+
+  .slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    background-color: var(--slogan-color);
+
+    .slogan-container {
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-content: center;
+      line-height: 1.5;
+
+      .slogan-image  {
+        text-align: center;
+
+        img {
+          width: 400px;
+        }
+      }
+      
+      .slogan-description {
+        text-align: start;
+
+        h1 {
+          width: 80%;
+          padding-bottom: 30px;
+          color: var(--title-primary);
+        }
+
+        p {
+          font-size: 20px;
+          color: var(--text-color);
+        }
+      }
+    }
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+
+    .title-services {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: var(--title-secondary);
+    }
+
+    .services-grid {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      grid-template-columns: repeat(2, 450px);
+      padding: 50px 0;
+      margin: 0 auto;
+
+      .creativeImg {
+        width: 400px;
+      }
+
+      .services-items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        line-height: 2.5;
+        padding-left: 40px;
+        
+
+        img {
+          width: 22px;
+          margin-right: 8px;
+        }
+        
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .home {
+  
+    .slogan {
+      padding: 50px 20px;
+      
+  
+      .slogan-container {
+        width: 100%;
+        grid-template-columns: repeat(1, 100%);
+        
+        .slogan-description {
+          text-align: center;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  
+    .services {
+      margin: 50px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      .services-grid {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(1, 300px);
+        text-align: center;
+
+        .creativeImg {
+          display: none;
+        }
+      }
+    }
+  }
+
+}

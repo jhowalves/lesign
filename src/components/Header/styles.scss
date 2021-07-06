@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  background: var(--header-color);
+
+  header {
+    max-width: 1200px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    img {
+      width: 120px;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-left: 40px;
+
+      a {
+        text-decoration: none;
+        color: var(--text-header);
+        font-family: var(--body-font);
+        font-size: 15px;
+
+        &:hover {
+          color: var(--heading)
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1260px) {
+  .container {
+    header {
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+  
+}

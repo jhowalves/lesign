@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-color: #101010;
+  --banner-color: #ccc;
+  --slogan-color: #CEDEEB;
+  
+  --text-header: rgb(230, 230, 230);
+  --text-footer: #666;
+  --text-color: #999;
+
+  --title-secondary: #333;
+  --title-primary: #666;
+
+  --line: #e11f2c;
+  --heading: #fff;
+
+  --body-font: 'Inter', sans-serif;
+}
+
+h1 ,h2 ,h3 ,h4 ,h5 ,h6, p {
+  font-family: var(--body-font);
+}
+
+input, textarea {
+  font-family: var(--body-font);
+  font-weight: 500;
+}
+
+.line {
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+  height: 5px;
+  background: var(--line);
+}
