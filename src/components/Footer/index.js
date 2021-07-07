@@ -1,3 +1,4 @@
+import React from 'react';
 import './styles.scss';
 import facebook from '../../assets/facebook.png'
 
