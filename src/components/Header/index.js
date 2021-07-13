@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import './styles.scss';
 import logotipo from '../../assets/logotipo.svg';
 
-export function Header() {
+export function Header() { 
+
   return(
     <div className="container">
       <header>
@@ -12,8 +13,14 @@ export function Header() {
           <img src={logotipo} alt="Logo" />
         </Link>
 
+        <div className="mobile-menu">
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
+        </div>
+
         <nav>
-          <ul>
+          <ul className="nav-list">
             <li>
               <Link to="/">Home</Link>
             </li>

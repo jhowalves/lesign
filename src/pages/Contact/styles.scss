@@ -66,3 +66,18 @@
     }
   }
 }
+
+@media screen and(max-width: 1070px) {
+  .contact {
+    .contact-container {
+      grid-template-columns: repeat(1, 90%);
+
+      form {
+  
+        .cont, .men, .sb {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

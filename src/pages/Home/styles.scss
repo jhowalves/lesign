@@ -24,17 +24,17 @@
       }
       
       .slogan-description {
-        text-align: start;
+        text-align: left;
+        width: 80%;
 
         h1 {
-          width: 80%;
           padding-bottom: 30px;
           color: var(--title-primary);
         }
-
         p {
           font-size: 20px;
           color: var(--text-color);
+          margin: 0 auto;
         }
       }
     }
@@ -101,6 +101,7 @@
         .slogan-description {
           text-align: center;
           margin-bottom: 50px;
+          width: 100%;
         }
       }
     }
